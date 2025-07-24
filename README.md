@@ -24,3 +24,16 @@ npx prisma migrate dev --name available
 
 
 ```
+
+
+# Product Microservice
+
+
+
+
+## DEV
+1. clonar el repositorio
+2. instalar dependencias
+3. crear un archivo `.env` basado en el `.env.template`
+4. Ejectur migracion de prisma `npx prisma migrate dev`
+5. Ejecutar el microservice `npm run start:dev`
