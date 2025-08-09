@@ -37,3 +37,16 @@ npx prisma migrate dev --name available
 3. crear un archivo `.env` basado en el `.env.template`
 4. Ejectur migracion de prisma `npx prisma migrate dev`
 5. Ejecutar el microservice `npm run start:dev`
+
+
+
+## Docker Google Cloud
+
+### Build
+```bash
+docker build -f dockerfile.prod -t southamerica-east1-docker.pkg.dev/tienda-microservicios-468503/image-registry/products-ms .
+```
+### Imagen de producción
+```bash
+docker image push southamerica-east1-docker.pkg.dev/tienda-microservicios-468503/image-registry/products-ms
+```
